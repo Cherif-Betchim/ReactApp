@@ -1,38 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background-color: #F24236;
+  width: 100%;
+  font-family: 'Cookie', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  position: absolute;
+  top: 90px; left: 180px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#days {
+  font-size: 50px;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.drop {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+}
+.snow {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #FFF;
+  box-shadow: 0 0 10px #FFF
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.animate {
+  animation: falling 8.5s infinite ease-in;
 }
+
+
+@keyframes falling {
+  0% {top: 0; opacity: 1;}
+  100% {top: 1500px; opacity: 0}
+}
+
+
