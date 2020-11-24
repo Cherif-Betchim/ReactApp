@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import santaClaus from './sauta-claus-jonathan-borba.jpg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h1>Dear Father Christmas</h1>
+                <img src={santaClaus} className="santa" alt="santaClaus"/>
+                <p>Here's our group wish list !</p>
+            </header>
+        </div>
+    );
 }
 
 export default App;

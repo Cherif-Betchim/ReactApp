@@ -2,14 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.santa {
+  height: 400px;
+  width: 350px;
+  /*pointer-events: none;*/
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .santa {
   }
 }
 
